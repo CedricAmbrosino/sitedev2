@@ -1,0 +1,293 @@
+html{
+	padding:0px;
+	margin:0px;
+}
+
+body{	
+	padding: 0px;
+	margin:0px;
+	background-color: #eee;
+}
+
+@media screen and (min-width: 880px){
+
+	/*Header*/
+	h1{
+		font: 50px 'Lobster', cursive;
+		margin-left:50px;
+	}
+
+	/*Menu navigation*/
+	nav{
+		background-color: #222;
+		height:50px;
+	}
+	#nav{
+		padding:0px;
+		margin:0px;
+		height:50px;
+		background-color: #222;
+		display:flex;
+		justify-content:center;
+	}
+
+	#nav li{
+		padding:0px;
+		margin:0px;
+		list-style-type:none;	
+	}
+
+	#nav a{
+		text-align:center;
+		color:#fff;
+		margin:0px;
+		background-color:#222;
+		width: 110px;
+		height:50px;
+		display:block;
+		border-right:1px solid #000;
+		text-decoration:none;
+		font: bold 17px 'Bree Serif', serif;
+		text-transform:uppercase;
+	} 
+	#nav li:first-child a /*Cible le premier enfant a du li*/
+	{
+		border-left:1px solid #000;
+	}
+
+	#nav a:hover /*Un état différent lors du survol des blocks*/
+	{
+	   color:#fff;
+	   background:#444;
+	}
+
+	/*Contenant principal*/
+	#main{
+		width:800px;
+		margin:0px auto 20px auto;	
+		padding-bottom:20px;
+	}
+
+	#main h2{
+		font: bold 25px 'Bree Serif', serif;
+		text-align:center;
+		border-top: 4px double #000;
+		border-bottom: 4px double #000;
+	}
+		
+	article{
+		font: bold 17px 'Bree Serif', serif;
+	}
+
+	article li{
+		padding:0px;
+		margin:0px;
+		list-style-type:none;
+	}
+		
+	article a{
+		color: #000;
+		text-decoration:none;
+		text-align:center;
+	}
+	
+	article a:hover{
+		color: #555;
+	}	
+
+	/*footer*/
+	footer{
+		width:100%;
+		height:300px;
+		background-color: #888;
+	}
+
+}
+
+/**************Milieu**********************************************/
+@media screen and (min-width:470px) and (max-width:879px)
+{
+	/*Header*/
+	h1{
+		font: 50px 'Lobster', cursive;
+		text-align:center;
+	}
+	
+	/*Menu navigation*/
+	nav{
+		background-color: #222;
+		height:50px;
+	}
+	#nav{
+		padding:0px;
+		margin:0px;
+		height:50px;
+		display:flex;
+		justify-content:center;
+		flex-wrap:wrap;
+	}
+	
+	#nav li{
+		padding:0px;
+		margin:0px;
+		list-style-type:none;	
+	}
+	
+	#nav a{
+		text-align:center;
+		color:#fff;
+		margin:0px;
+		background-color:#222;
+		width: 110px;
+		height:50px;
+		display:block;
+		border-right:1px solid #000;
+		text-decoration:none;
+		font: bold 17px 'Bree Serif', serif;
+		text-transform:uppercase;
+	}
+	
+	#nav li:first-child a /*Cible le premier enfant a du li*/
+	{
+		border-left:1px solid #000;
+	}
+	
+	#nav a:hover /*Un état différent lors du survol des blocks*/
+	{
+	   color:#fff;
+	   background:#444;
+	}
+	
+	/*Contenant principal*/
+		#main{
+			margin:0px;	
+			padding-bottom:20px;
+		}
+
+		#main h2{
+			font: bold 25px 'Bree Serif', serif;
+			text-align:center;
+			border-top: 4px double #000;
+			border-bottom: 4px double #000;
+		}
+
+		article{
+		font: bold 17px 'Bree Serif', serif;
+		}
+		
+		article li{
+			padding:0px;
+			margin:0px;
+			list-style-type:none;
+		}
+		
+		article a{
+			color: #000;
+			text-decoration:none;
+			text-align:center;
+		}
+		
+		article a:hover{
+			color: #555;
+		}
+		
+		
+	/*footer*/
+		footer{
+			width:100%;
+			height:300px;
+			background-color: #888;
+		}
+}
+
+/****************************Le plus petit*******************/
+@media screen and (max-width:469px)
+{
+	/*Header*/
+	h1{
+		font: 50px 'Lobster', cursive;
+		text-align:center;
+	}
+	
+	/*Menu navigation*/
+	nav{
+		background-color: #222;
+	}
+	#nav{
+		padding:0px;
+		margin:0px;
+		display:flex;
+		display: flex; /*Seul touts les éléments se retrouve cote à cote*/
+		flex-direction: column;
+	}
+	
+	#nav li{
+		padding:0px;
+		margin:0px;
+		list-style-type:none;	
+	}
+	
+	#nav a{
+		text-align:center;
+		color:#fff;
+		margin:0px;
+		background-color:#222;
+		height:50px;
+		display:block;
+		border-bottom:1px solid #000;
+		text-decoration:none;
+		font: bold 17px 'Bree Serif', serif;
+		text-transform:uppercase;
+	}
+	
+	#nav li:first-child a /*Cible le premier enfant a du li*/
+	{
+		border-top:1px solid #000;
+	}
+	
+	#nav a:hover /*Un état différent lors du survol des blocks*/
+	{
+	   color:#fff;
+	   background:#444;
+	}
+	
+	/*Contenant principal*/
+		#main{
+			margin:0px;	
+			padding-bottom:20px;
+		}
+
+		#main h2{
+			font: bold 25px 'Bree Serif', serif;
+			text-align:center;
+			border-top: 4px double #000;
+			border-bottom: 4px double #000;
+		}
+		
+		article{
+		font: bold 17px 'Bree Serif', serif;
+		}
+		
+		article li{
+			padding:0px;
+			margin:0px;
+			list-style-type:none;
+		}
+		
+		article a{
+			color: #000;
+			text-decoration:none;
+			text-align:center;
+		}
+		
+		article a:hover{
+			color: #555;
+		}
+		
+	/*footer*/
+		footer{
+			width:100%;
+			height:300px;
+			background-color: #888;
+		}
+}
